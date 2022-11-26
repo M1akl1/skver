@@ -206,12 +206,22 @@ form div.application-button input {
     font-size: 35px;
     text-transform: uppercase;
     color: white;
+    transition: all 0.1s ease;
+    opacity: 0.3;
 }
 
 .application-button {
     grid-column-start: 3;
     grid-column-end: 4;
     justify-self: right;
+}
+
+.application-button input:hover {
+    opacity: 1;
+}
+
+.application-button input:active {
+    opacity: 0.3;
 }
 
 .about {
@@ -321,18 +331,18 @@ section .card .image img {
     height: 7px;
     width: 26px;
     border-radius: 25px;
-    background-color: #BA0003;
+    background-color: #02B6E8;
 }
 
 .swiper-button-next, .swiper-button-prev {
     opacity: 0.5;
-    color: #BA0003;
+    color: #02B6E8;
     transition: all 0.3s ease;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
     opacity: 1;
-    color: #BA0003;
+    color: #02B6E8;
 }
 
 .contacts {
